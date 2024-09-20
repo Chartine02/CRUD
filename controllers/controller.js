@@ -70,11 +70,10 @@ const itemController = {
         req.body
       );
 
-      if (!updateditem) {
+      if (!updateditem)
         res.status(404).json({
           message: "item not found",
         });
-      }
 
       res.status(200).json({
         message: "item successfully updated",

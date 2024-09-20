@@ -7,7 +7,7 @@ import route from "./routes/routes.js";
 const app = express();
 
 app.use(express.json());
-app.use(route);
+app.use("/items", route);
 
 const db_connection_string = process.env.MONGODB_URI;
 const port = process.env.PORT || 3000;
